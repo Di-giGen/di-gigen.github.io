@@ -1,10 +1,10 @@
 # Header Menu
 menu:
   Home: /
-  Projects: /projects/
-  Blog: /archives/ # can set archive-dir in root config to custom value
-  Contact: /contact/
-  About: /about/
+  #Projects: /projects/
+  #Blog: /archives/ # can set archive-dir in root config to custom value
+  #Contact: /contact/
+  #About: /about/
    
 rss: /atom.xml
 

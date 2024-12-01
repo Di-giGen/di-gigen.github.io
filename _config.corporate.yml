@@ -1,11 +1,10 @@
 # Header Menu
 menu:
-  Home: /
-  Projects: /projects/
-  Blog: /archives/ # can set archive-dir in root config to custom value
-  Contact: /contact/
-  About: /about/
-   
+    Home: /
+    Blog: /archives/ # can set archive-dir in root config to custom value
+    Services: https://hub.vectordigi.cc
+    Contact: /contact/
+
 rss: /atom.xml
 
 # Content
@@ -19,20 +18,20 @@ swiftype_install_key:
 
 # Social
 social:
-  github: https://github.com/Vector-Digi
-  twitter: 
-  facebook: 
-  rss: atom.xml
-  linkedin: 
-  stackoverflow: 
+    github: https://github.com/di-gigen
+    twitter: 
+    facebook: 
+    rss: atom.xml
+    linkedin: 
+    stackoverflow: 
 
 # Miscellaneous
 color_scheme: red   # options: blue, gray, green, orange, red, turquoise
 favicon: /favicon.ico # path from root of hexo site
 twitter_username: # twitter username without the @
-default_author: Anonymous
+default_author: hostmaster
 
-about: 矢量数位是由社区驱动的自由软件与DIY硬件开发组织, 成立于2012年. <br><br> 我们以自身行动抵制数字领域的不对等体量及相关产品服务的侵权行为.
+about: 數位研是由社区驱动的自由软件与DIY硬件开发组织, 成立于2012年. <br><br> 我们以自身行动抵制数字领域的不对等体量及相关产品服务的侵权行为.
 phone: 707-242-1889
 email: vectordigi@disroot.org
 address_1: California

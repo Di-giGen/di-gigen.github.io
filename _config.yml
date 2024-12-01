@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 矢量數位
+title: 數位研
 subtitle: 'Digital rights Reserved'
-description: '矢量數位公式サイト'
+description: '數位研公式サイト'
 keywords:
-author: Vector Di-gi
+author: Di-gi Gen
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://vector-digi.github.io
+url: https://di-gigen.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -39,13 +39,13 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: true
-  line_number: true
-  auto_detect: true
-  tab_replace:
+    enable: true
+    line_number: true
+    auto_detect: true
+    tab_replace:
 
 marked:
-  breaks: false
+    breaks: false
 
 # Category & Tag
 default_category: uncategorized
@@ -72,26 +72,12 @@ theme: corporate
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/Vector-Digi/vector-digi.github.io.git
-  branch: master
-  message:
+    type: git
+    repo: https://github.com/Di-giGen/di-gigen.github.io
+    branch: dev
+    message:
 
-live2d:
-  enable: false
-  scriptFrom: local
-  pluginRootPath: live2dw/
-  pluginJsPath: lib/
-  pluginModelPath: assets/
-  tagMode: false
-  log: false
-  model:
-    use: live2d-widget-model-wanko
-  display:
-    position: right
-    width: 150
-    height: 300
-  mobile:
-    show: false
-  react:
-    opacity: 0.7
+sitemap: 
+    path: sitemap.xml
+    tags: false
+    categories: false
