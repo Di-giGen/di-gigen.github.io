@@ -1,9 +1,9 @@
 ---
 title: Linux服务器面板推荐：Cockpit
 date: 2023-11-23 16:47:04
-tags: [运维]
+tags: [运维,VPS,服务器,面板,SSL证书,caddy,2FA]
 category: [计算机技术]
-thumbnail: /img/cockpit-dashboard-usage/88238738.png
+thumbnail: /img/cockpit-dashboard-usage/88238738.jpg
 lede: 开源可信的服务器管理面板  
 ---
 ## 前言

@@ -1,10 +1,10 @@
 ---
 title: Caddy进行sni回落的xray reality代理方案
 date: 2024-11-21 20:00:00
-tags: [网络]
+tags: [科学上网,VPS,服务器,sing-box,xray,reality,caddy,vless,建站,SSL证书,防火墙,容器,podman]
 category: [计算机技术]
 lede: 科学上网系列(その一)
-thumbnail: /img/caddy-sni-with-reality/122668460.png
+thumbnail: /img/caddy-sni-with-reality/122668460.jpg
 ---
 ## 前言  
 本文采用集成L4插件的Caddy负责入站分流、sing-box容器作为vless+vision+reality协议组合的xray代理节点，旨在充分发挥Caddy自动签发证书的便利性与sing-box的代理协议配置多样性，为同时具有可靠代理和建站需求的服主提供更统一且灵活的部署思路。  

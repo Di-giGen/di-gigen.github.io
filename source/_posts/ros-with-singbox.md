@@ -1,10 +1,10 @@
 ---
 title: RouterOS安装sing-box容器实现透明代理
 date: 2024-07-03 11:05:20
-tags: [网络,路由器]
+tags: [ROS,路由器,sing-box,容器,docker,科学上网,透明代理,旁路由,Mikrotik,防火墙]
 category: [计算机技术]
 lede: 科学上网系列(その二)
-thumbnail: /img/ros-with-singbox/100516900.png
+thumbnail: /img/ros-with-singbox/100516900.jpg
 ---
 
 ## 前言  
