@@ -1,9 +1,9 @@
 ---
 title: hexo建站自动化维护技巧
 date: 2019-09-27 23:09:49
-tags: [运维]
+tags: [运维,hexo,建站]
 category: [计算机技术]
-thumbnail: /img/auto-build-static-site/91149756.png
+thumbnail: /img/auto-build-static-site/91149756.jpg
 lede: 为你的hexo+gitpage建站方案引入自动发布、平滑升级等特性  
 ---
 hexo作为开发活跃且的静态框架受到广大博主和站长们的喜爱和二次开发, 如果手上有Freenom的域名并且通过gitpage方式部署的话, 长期运营甚至不会产生任何费用. 今年Freenom暗改了免费域名的申请政策之后, 薅羊毛变得十分困难, 且域名容易被指滥用而收回, 而github page相对服务器部署方式来说就没有宕机或欠费导致域名被闲置的风险.  

@@ -1,7 +1,7 @@
 ---
 title: Linux实用命令手记
 date: 2018-10-07 21:22:52
-tags: [Linux]
+tags: [linux,shell,容器]
 category: [计算机技术]
 thumbnail: /img/linux-tech-tips/63143834.png
 lede: 毛胚房与精装修，你更偏爱哪一种?

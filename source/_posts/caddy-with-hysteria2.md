@@ -1,10 +1,10 @@
 ---
 title: 与Caddy复用端口的Hysteria2代理方案
 date: 2024-11-30 19:58:00
-tags: [网络]
+tags: [科学上网,hysteria2,sing-box,caddy,VPS,UDP,HTTP/3,建站]
 category: [计算机技术]
 lede: 科学上网系列(その三)
-thumbnail: /img/caddy-with-hysteria2/tcp&udp-visualized.jpeg
+thumbnail: /img/caddy-with-hysteria2/tcp&udp-visualized.jpg
 ---
 ## 前言
 借助xtls相关协议降低tls流量特征、利用伪装站tcp转发以隐藏VPS地址等技术手段，我们在系列[前篇](https://di-gigen.github.io/2024/11/21/caddy-sni-with-reality/)已经搭建了基于TCP的高隐匿性代理服务。而对于部分侧重发包而非传输可靠性的使用场景如流媒体、直播、游戏联机的场景，如果您的VPS线路优质，那么自建基于UDP协议的Hysteria2节点能帮您省下游戏加速器的花费。本文将为使用Caddy建站的服主们提供Hysteria2的端口复用伪装部署方式。  
@@ -59,7 +59,7 @@ thumbnail: /img/caddy-with-hysteria2/tcp&udp-visualized.jpeg
 Caddy的安装不再赘述。本方案无需使用[前篇](https://di-gigen.github.io/2024/11/21/caddy-sni-with-reality/)的L4路由功能，但我们仍建议保留此插件，因为sing-box能很方便地同时接管多种的代理协议，这样您可以针对不同使用需求灵活选用reality还是hysteria2。  
 
 ### sing-box
-sing-box将在`7894`监听hysteria2的代理请求,强制命令客户端使用BBR拥塞控制算法。当443端口遭受主动检测的时候，会返回通过HTTP/3访问主站`sub.mydomain.com`的网页以达到伪装目的。  
+sing-box将在`UDP:8443`监听hysteria2的代理请求,强制命令客户端使用BBR拥塞控制算法。当443端口遭受主动检测的时候，会返回通过HTTP/3访问主站`sub.mydomain.com`的网页以达到伪装目的。  
 除了需要补全`MY_USERNAME`和`MY_PASSWORD`，您还需要根据服务器文件结构酌情调整`key_path`和`certificate_path`，通常无根Caddy自签的证书会被存储在`~/.local/share/caddy/certificates/`，模板中展示的是采用前篇Podman方式部署sing-box时Caddy自签证书路径在容器内的映射。  
 ```json
 {
@@ -73,12 +73,12 @@ sing-box将在`7894`监听hysteria2的代理请求,强制命令客户端使用BB
         "tag": "hy2-in",
         "type": "hysteria2",
         "listen": "::",
-        "listen_port": 7894,
+        "listen_port": 8443,
         "ignore_client_bandwidth": true,
         "masquerade": "http://localhost:8080",
         "users": [{
-                    "name": "MY_USERNAME",
-                    "password": "MY_PASSWORD"
+            "name": "MY_USERNAME",
+            "password": "MY_PASSWORD"
         }],
         "tls": {
             "enabled": true,

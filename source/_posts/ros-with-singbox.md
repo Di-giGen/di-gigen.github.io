@@ -1,10 +1,10 @@
 ---
 title: RouterOS安装sing-box容器实现透明代理
 date: 2024-07-03 11:05:20
-tags: [网络,路由器]
+tags: [RouterOS,路由器,sing-box,容器,科学上网,透明代理,旁路由,Mikrotik]
 category: [计算机技术]
 lede: 科学上网系列(その二)
-thumbnail: /img/ros-with-singbox/100516900.png
+thumbnail: /img/ros-with-singbox/100516900.jpg
 ---
 
 ## 前言  
@@ -98,12 +98,11 @@ container mounts add dst=/root/sing-box name=singbox_persist src=/containers/app
         {
             "tag": "tun-in",
             "type": "tun",
-            "inet4_address": ["172.19.0.1/30"],
+            "address": ["172.19.0.1/30"],
             "stack": "system",
             "sniff": true,
             "auto_route": true,
-            "sniff_override_destination": true,
-            "gso": true
+            "sniff_override_destination": true
         },
         {
             "tag": "dns-in",
