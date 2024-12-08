@@ -1,7 +1,7 @@
 # Header Menu
 menu:
     Home: /
-    Blog: /archives/ # can set archive-dir in root config to custom value
+    Blog: /blog/ # can set archive-dir in root config to custom value
     Services: https://hub.vectordigi.cc
     Contact: /contact/
 
@@ -31,7 +31,7 @@ favicon: /favicon.ico # path from root of hexo site
 twitter_username: # twitter username without the @
 default_author: hostmaster
 
-about: 數位研是由社区驱动的自由软件与DIY硬件开发组织, 成立于2012年. <br><br> 我们以自身行动抵制数字领域的不对等体量及相关产品服务的侵权行为.
+about: 數位研是由社区驱动的自由软件与DIY硬件开发组织, 成立于2012年. <br> 我们以自身行动抵制数字领域利用不对等体量行使侵权行为的产品和服务.
 phone: 707-242-1889
 email: vectordigi@disroot.org
 address_1: California

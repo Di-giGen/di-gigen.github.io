@@ -1,10 +1,10 @@
 ---
 title: 米家扫地机器人刷机实战
 date: 2019-06-23 22:32:19
-tags: [智能家居]
+tags: [智能家居,homeassistant,刷机]
 category: [消费电子]
 lede: 国行特供受害者笔记
-thumbnail: /img/free-your-mi-vacuum-from-cloud/99192422.png
+thumbnail: /img/free-your-mi-vacuum-from-cloud/99192422.jpg
 ---
 ## 前言  
 本文采用一种不同于[Miot](https://github.com/al-one/hass-xiaomi-miot)插件的方式将Roborock S50米家扫地机器人接入Home Assistant，在保留绝大部分原厂功能的同时停止向米家服务器的数据传输。  
